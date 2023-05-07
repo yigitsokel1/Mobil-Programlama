@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "365764634753",
+    "project_id": "mini-mezun-uygulamasi-acdbb",
+    "storage_bucket": "mini-mezun-uygulamasi-acdbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365764634753:android:f8531a42f2bf40f17d8580",
+        "android_client_info": {
+          "package_name": "com.example.minimezunuygulamasi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365764634753-8j61epv9rjpsn01dhmmv41l0raurn6bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYEJJLZYnzcRHMIhXl0YdEdJOuvJrvoFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365764634753-8j61epv9rjpsn01dhmmv41l0raurn6bl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

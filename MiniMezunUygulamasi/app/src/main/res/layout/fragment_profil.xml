@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilFragment"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/profilim"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+
+
+            <ImageView
+                android:id="@+id/profil_frag_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/profil_foto_sec"
+                android:layout_width="37dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="260dp"
+                android:src="@drawable/baseline_camera_alt_24" />
+
+
+            <EditText
+                android:id="@+id/profil_isim"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:enabled="false"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/spinnereduc"
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:background="@color/bottom_view_color"
+                android:entries="@array/education_levels"
+                android:prompt="@string/select_education_level"/>
+
+            <EditText
+                android:id="@+id/edittext_country"
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:background="@color/bottom_view_color"
+                android:hint="Ülke"/>
+
+            <EditText
+                android:id="@+id/edittext_city"
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:background="@color/bottom_view_color"
+                android:hint="Şehir"/>
+
+            <EditText
+                android:id="@+id/edittext_company"
+                android:layout_marginTop="20dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center"
+                android:layout_height="30dp"
+                android:background="@color/bottom_view_color"
+                android:hint="Firma"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/social_media_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Sosyal Medya Hesapları"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <EditText
+                        android:id="@+id/facebook_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:hint="Facebook Kullanıcı Adı"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <EditText
+                        android:id="@+id/instagram_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:hint="Instagram Kullanıcı Adı"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+
+                    <EditText
+                        android:id="@+id/twitter_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:hint="Twitter Kullanıcı Adı"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="E-posta Adresi:"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="350dp"
+                    android:layout_gravity="center"
+                    android:layout_height="40dp"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    android:id="@+id/textViewPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Telefon Numarası:"
+
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/editTextPhoneNumber"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="350dp"
+                    android:layout_gravity="center"
+                    android:layout_height="40dp"
+                    android:inputType="phone" />
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="Kaydet"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
